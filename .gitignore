@@ -1,0 +1,8 @@
+**/obj
+**/bin
+.fake
+.vs
+paket-files
+.paket
+src/IdentityServer/tempkey.jwk
+.ionide
