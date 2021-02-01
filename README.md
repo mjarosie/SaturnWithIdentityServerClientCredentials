@@ -1,8 +1,9 @@
-### How to build application
+### How to build this application
 
-1. Make sure you have installed version of .Net SDK defined in `global.json`
-2. Run `dotnet tool restore` to restore all necessary tools
-3. Run `dotnet fake build -t Run` to start application in watch mode (automatic recompilation and restart at file save)
+1. Make sure you have installed the version of .Net SDK defined in `global.json`
+1. Trust the ASP.NET Core HTTPS development certificate by invoking `dotnet dev-certs https --trust` (see [the documentation](https://docs.microsoft.com/en-us/aspnet/core/security/enforcing-ssl#trust-the-aspnet-core-https-development-certificate-on-windows-and-macos), you might have to do something else if you're not running Windows/macOS)
+1. Run `dotnet tool restore` to restore all necessary tools
+1. Run `dotnet fake build -t Run` to start the application in watch mode (automatic recompilation and restart at file save)
 
 ### How to test the Client Credentials flow
 
